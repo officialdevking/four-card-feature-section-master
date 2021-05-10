@@ -1,0 +1,138 @@
+*{
+ padding: 0;
+ margin: 0;
+}
+body{
+ background-color: hsl(0, 0%, 98%);
+ width: 100%;
+ font-family: sans-serif;
+ font-size: 15px;
+ color: hsl(229, 6%, 66%);
+ box-sizing: border-box;
+}
+#header{
+ text-align: center;
+ margin: auto;
+ padding: 0.2rem;
+}
+#header h1 {
+ font-weight: 100;
+ color: hsl(234, 12%, 34%);
+ margin: 8px 0;
+}
+#header p{
+ margin: 10px auto;
+ width: 40%;
+}
+
+#technology{
+ display: flex;
+ justify-content: space-around;
+ width: 73%;
+ align-items: center;
+ margin: auto;
+}
+.middle{
+ margin: 10px;
+}
+.one, .two, .three, .four{
+ padding: 1.5rem;
+ box-sizing: border-box;
+ background-color: white;
+ border-radius: 10px;
+ -webkit-box-shadow: 0px 0px 14px -5px rgba(0,0,0,0.75);
+ -moz-box-shadow: 0px 0px 14px -5px rgba(0,0,0,0.75);
+ box-shadow: 0px 0px 14px -5px rgba(0,0,0,0.75);
+}
+.one{
+ position: relative;
+ width: 100%;
+ height: 40vh;
+ min-width: 310px;
+ max-width: 300px;
+ border-top: 3px solid hsl(180, 62%, 55%);
+}
+.two{
+ position: relative;
+ margin-bottom: 20px;
+ width: 30%;
+ height: 40vh;
+ min-width: 310px;
+ max-width: 300px;
+ border-top: 3px solid hsl(0, 78%, 62%);
+}
+.three{
+ position: relative;
+ margin-top: 20px;
+ width: 25%;
+ height: 40vh;
+ min-width: 310px;
+ max-width: 300px;
+ border-top: 3px solid hsl(34, 97%, 64%);
+}
+.four{
+ position: relative;
+ width: 30%;
+ height: 40vh;
+ min-width: 310px;
+ max-width: 300px;
+ border-top: 3px solid hsl(212, 86%, 64%);
+}
+.super{
+ position: absolute;
+ width: 15%;
+ top: 170px;
+ left: 240px;
+}
+
+@media (max-width: 995px){
+ #technology{
+  display: block;
+  width: 100%;
+ }
+ .tech{
+  margin: 20px auto;
+  width: 50%;
+ }
+ .middle{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+ }
+ .two{
+  margin: auto 10px;
+ }
+ .three{
+  margin: auto 10px;
+ }
+}
+
+@media (max-width: 680px) {
+ .middle{
+  display: block;
+  width: 100%;
+ }
+ .two{
+  margin: 20px auto;
+ }
+ .three{
+  margin: 20px auto;
+ }
+ .one, .two, .three, .four{
+  min-width: 290px;
+ }
+ .super{
+  top: 170px;
+  left: 220px;
+ }
+}
+
+@media (max-width: 375px) {
+ #header h1{
+  font-size: 1.5em;
+ }
+ #header p{
+  margin: 10px auto;
+  width: 90%;
+ }
+}
